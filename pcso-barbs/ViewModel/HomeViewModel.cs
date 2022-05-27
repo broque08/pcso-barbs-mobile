@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pcso_barbs.ViewModel
 {
-    internal class HomeViewModel : BaseViewModel
+    public partial class HomeViewModel : BaseViewModel
     {
     }
 }

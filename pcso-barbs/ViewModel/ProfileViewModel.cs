@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CommunityToolkit.Mvvm.Input;
 
-namespace pcso_barbs.ViewModel
+namespace pcso_barbs.ViewModel;
+
+public partial class ProfileViewModel : BaseViewModel
 {
-    internal class ProfileViewModel : BaseViewModel
+    [ICommand]
+    public void GoToLogin()
     {
+        Shell.Current.GoToAsync("//Login");
     }
 }

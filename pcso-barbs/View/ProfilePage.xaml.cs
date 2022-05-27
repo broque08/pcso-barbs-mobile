@@ -1,9 +1,13 @@
+using pcso_barbs.ViewModel;
+
 namespace pcso_barbs.View;
 
 public partial class ProfilePage : ContentPage
 {
-	public ProfilePage()
-	{
-		InitializeComponent();
-	}
+
+    public ProfilePage(ProfileViewModel profileViewModel)
+    {
+        InitializeComponent();
+        BindingContext = profileViewModel;
+    }
 }
