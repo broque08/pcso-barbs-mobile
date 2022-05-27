@@ -1,4 +1,6 @@
-﻿namespace pcso_barbs;
+﻿using pcso_barbs.View;
+
+namespace pcso_barbs;
 
 public partial class App : Application
 {
